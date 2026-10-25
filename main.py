@@ -448,7 +448,8 @@ if path_1 == "FIRST" or "first":
             time.sleep(1)
             print("►  The baby fox raises its head, slowly meeting your gaze.")
             input("<Press enter to continue>")
-            print("» " + kit_name + ": °_o  hellow!")
+            kit_name = "Fred"
+            print("» " + kit_name + ": °_o  hellow hoo-man. Me name Fred!!  :D")
             time.sleep(0.5)
             print("» " + name + ": Hi, foxie.")
             print("» " + kit_name + ": ●〰●  Me hangry. Want foods. Pweeze. Very hangry.")
@@ -470,6 +471,9 @@ if path_1 == "FIRST" or "first":
             time.sleep(0.5)
             print("►  Is it just your imagination, or.. does " + animal_1 + " seem a bit suspicious of you?")
             two_1 = input("==> Yes, I should leave ASAP.  --or--  No, I must be imagining things.  (y/n)")
+            if two_1 == "n":
+                print("►  Nope! " + animal_1 + " also seems a little antsy...")
+                two_1 = "y"
             if two_1 == "y":
                 print("►  <First option selected>")
                 print("--------------")
@@ -482,11 +486,31 @@ if path_1 == "FIRST" or "first":
                 print("» " + name + ": ...")
                 time.sleep(0.5)
                 two_2 = input("==> Should you run, now? (y/n)")
+                if two_2 == "n":
+                    print("Tip: PSST! " + animal_1 + " seems to be infected with rabies!!")
+                    two_2 = "y"
             if two_2 == "y":
                 print("►  *You\'re running like your life depends on it. Maybe it does.*")
                 time.sleep(1)
                 print("Adrenaline urges you on, even as sharp pebbles get buried deeper and deeper into the soles of your plain tennis shoes. Maybe you should have invested in quality hiking gear.")
                 time.sleep(2)
+                #badge award here!
+                #ending messages:
+                time.sleep(2)
+                for gap in range(4):
+                    print(" ")
+                badge3 = "<ESCAPE FROM " + animal_1 + " JUST IN TIME!>"
+                end_msg3 = ["Congratulations--you've earned: " + badge3 + "!! I\'m mighty proud of ya. (screenshot to save!)", "<  + 1   " + badge3 + " earned. Screenshot this message to store in inventory."]
+                print("꒰ " + end_msg3 + " ꒱")
+                end3 = ["end", "stop game here", "stop", "quit", "end game here", "quit game", "replay", "retry", "reattempt game"]
+                time.sleep(2)
+                end3_confirm = input("Type 'End' to end the game here.  ")
+                if end3_confirm == end3:
+                    print(" ")
+                    print(" ")
+                    print(" ")
+                    print("------")
+                    print("<Restart the game to try again!!>")
         if two == "b":
             print(name + ": Uhh, I just felt like it.")
             time.sleep(0.5)
@@ -511,6 +535,8 @@ if path_1 == "FIRST" or "first":
             print(animal_1 + ": FINE, annoying giant. As I've told you already, I\'m famished for entertainment. But, I\'m also a chill " + animal_1 + ". So, I\'ll offer you the deal of your lifetime.")
             time.sleep(2)
             two1 = input("Should you back out of any deals, or continue? (type leave/stay)")
+            if two1 == "leave":
+
             if two1 == "stay":
                 print(animal_1 + ": In order to win this little game, you must risk yourself and first get past the Red Evil Creature.")
                 time.sleep(1)
@@ -531,6 +557,17 @@ if path_1 == "FIRST" or "first":
                     print(" ")
                     a = ["fox", "vixen", "mama fox", "foxes"]
                     b = input("Hurry up and guess what you're going to face, huge thing.  ")
+                    if a != b:
+                        retries = 0
+                        max_retries = 5
+                        word_bank_b = ["WROOONG. Try again.", "IT WAS OBVIOUSLY NOT THAT, GENIUS! (try again!)", "I pity the hoo-man species for its lack of intelligence... (try again!)"]
+                        while a != b:
+                            while retries < max_retries:
+                                retries += 1
+                                animal_1_phrases = random.choice(word_bank_b)
+                                b = input(animal_1_phrases)
+                                if b == a:
+                                    break
                     if a == b:
                         print(animal_1 + ": Wow, you\'re actually...")
                         time.sleep(1)
@@ -544,12 +581,18 @@ if path_1 == "FIRST" or "first":
                     time.sleep(2)
                     print("Some time passes. You start to wonder if the day can get any crazier.")
                     two1_2 = input("...Can it?? (y/n)")
+                    if two1_2 == "n":
+                        print("Congrats, I didn't finish this part of the story, yet!! Woah, you\'re dedicated!")
                     if two1_2 == "y":
                         print("<a bush is rustling, how odd!>")
                         two1_3 = input("Investigate it?")
+                        if two1_3 == "n":
+                            print("Congrats, I didn't finish this part of the story, yet!! Woah, you\'re dedicated!")
                         if two1_3 == "y":
                             print("<The MOST ADORABLE baby fox trips, stumbling out from under the cover of the leafy bush.>")
                             two1_4 = input("Awww, it's so tiny!! Should you stop to admire it? (y/n)")
+                            if two1_4 == "n":
+                                print("Congrats, I didn't finish this part of the story, yet!! Woah, you\'re dedicated!")
                             if two1_4 == "y":
                                 print("You stop to coo at the baby fox, feeling a new appreciation for nature.")
                                 time.sleep(1.5)
@@ -573,6 +616,8 @@ if path_1 == "FIRST" or "first":
                                     time.sleep(1)
                                     print("Kit: *tsks* You should be.")
                                     two1_6 = input("Walk away? (y/n)  ")
+                                    if two1_6 == "n":
+                                        print("Congrats, I didn't finish this part of the story, yet!! Woah, you\'re dedicated!")
                                     if two1_6 == "y":
                                         print("Seeing as there\'s not much else that you can do, now, you begin to walk away.")
                                         time.sleep(0.5)
