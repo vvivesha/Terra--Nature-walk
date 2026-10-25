@@ -2,6 +2,26 @@
 
 !!! This is a work in progress.
 
+
+
+
+
+IMPORTANT!!
+HOW TO RUN THE GAME: 
+1) Copy and paste the following link into your web browswer: (This is the link that came from file>share>copy github.dev link):   https://github.com/vvivesha/Terra--Nature-walk/blob/4f83ee6aa7ec178bcd3bb159bb78cfbe3a4af0a8/main.py
+
+2) Click the button that, when hovered over by your mouse cursor, says "Copy raw file"
+OR: I assume that you could just highlight and copy all of my code to your clipboard.
+
+3) Open your own code editor/something able to run code that you can paste into (if has a terminal, then it should work, I believe.)
+
+4) Run the code in your own code editor!! And, most importantly, have fun!
+
+
+
+
+
+
 WELCOME TO NATURE WALK, a text-based adventure/story game.
 You are stressed out, and long for nature. City life is just. Not. It.
 Play this game and see what happens at Shollow Park's Trails!
