@@ -536,7 +536,7 @@ if path_1 == "FIRST" or "first":
             time.sleep(2)
             two1 = input("Should you back out of any deals, or continue? (type leave/stay)")
             if two1 == "leave":
-
+                print("Congrats, I didn't finish this part of the story, yet!! Woah, you\'re dedicated!")
             if two1 == "stay":
                 print(animal_1 + ": In order to win this little game, you must risk yourself and first get past the Red Evil Creature.")
                 time.sleep(1)
