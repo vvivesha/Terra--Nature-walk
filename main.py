@@ -259,11 +259,6 @@ if animal_roll == "n":
     if q3 == "n":
         animal_3 = "moose"
 
-
-
-
-
-
        
        #need to add if they opt out of choosing their character's name!! (done)
 for gap in range(5):
@@ -281,7 +276,7 @@ time.sleep(1)
 print("*You walk over to the start of the trail, and grab a map.* You are equipped with nothing but a teacup. Your mother had questioned your sanity, insisting that you carry more supplies. But nobody could stop you from charging out of the house.")
 time.sleep(1)
 input("<Press enter to continue>")
-print("►  *Your empty teacup's lid quietly clinks against the ceramic body of the teacup.* You march onwards, and time seems to stall.")
+print("►  *Your empty tea cup's lid quietly clinks against the ceramic body of the tea cup.* You march onwards, and time seems to stall.")
 time.sleep(1)
 print("In no time, the first fork in the path is ahead of you. You see two signs. The first path leads to a waterfall, and the other leads to a cliff.")
 if mode in ["difficult" or "DIFFICULT"]:
@@ -321,7 +316,7 @@ if path_1 == "SECOND" or "second":
             time.sleep(0.2)
             qq1_1 = input("==> Try to pet it? (y/n)  ")
             if qq1_1 == "n":
-                print("You can\'t resist the urge to pet the baby fox. It\'s too cute.")
+                print("►  You can\'t resist the urge to pet the baby fox. It\'s too cute.")
                 qq1_1 == "y"
             if qq1_1 == "y":
                 print("►  *You slowly approach the baby fox.* It seems to be asleep; it's little body rises and falls gently with each breath.")
@@ -389,19 +384,18 @@ if path_1 == "SECOND" or "second":
                         for gap in range(4):
                             print(" ")
                         badge1 = "<MAKE " + animal_1 + " CRY TEARS OF RELIEF>"
-                        end_msg1 = ["Congratulations--you've earned: " + badge1 + "!! I\'m mighty proud of ya. (screenshot to save!)", "<  + 1   " + badge1 + " earned. Screenshot this message to store in inventory."]
+                        end_msg1 = ["►  Congratulations--you've earned: " + badge1 + "!! I\'m mighty proud of ya. (screenshot to save!)", "<  + 1   " + badge1 + " earned. Screenshot this message to store in inventory."]
                         print("꒰ " + end_msg1 + " ꒱")
                         end1 = ["end", "stop game here", "stop", "quit", "end game here", "quit game", "replay", "retry", "reattempt game"]
                         time.sleep(2)
-                        end1_confirm = input("Type 'End' to end the game here.  ")
+                        end1_confirm = input("==> Type 'End' to end the game here.  ")
                         if end1_confirm == end1:
                             print(" ")
                             print(" ")
                             print(" ")
                             print("------")
                             print("<Restart the game to discover more endings!!>")
-
-
+#badge 1 ^
 if path_1 == "FIRST" or "first":
     print("►  First path it is. ... 8 minutes pass, akin to the numerous towering oak trees. You've lost track of time again, when a " +  animal_1 + " scurries out of your path.")
     print("» " + animal_1 + ": ⇀‸↼  WATCH IT!! I was munching on this here seed, you INCONSIDERATE tower.")
@@ -435,7 +429,7 @@ if path_1 == "FIRST" or "first":
         time.sleep(0.2)
         print("» " + animal_1 + ": ゜-゜  Anyhow, what\'s with the fancy cup, stranger skyscraper?")
         time.sleep(0.5)
-        print("►  You look down. You had forgotten about the teacup that you\'ve been holding all this time.")
+        print("►  You look down. You had forgotten about the tea cup that you\'ve been holding all this time.")
         time.sleep(1)
         print("OH!! Is that a baby fox, hiding hiding behind you??")
         input("<Press enter to continue>")
