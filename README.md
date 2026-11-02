@@ -8,13 +8,13 @@
 
 # ***IMPORTANT!!
 ===================**HOW TO RUN THE GAME:**===================
-1) Follow the demo link (it is the link for this project's GitHub release), and find the download button.
+1) Follow the demo link/go to this project's release page, and find the download button for the main.exe.
 
 
-2) Complete the download to your computer.
+2) Complete the download of main.exe.
 
 
-3) Open the .exe executable file! It should be called main.exe.
+3) Open the main.exe executable file/run it!!
 
 
 4) Enjoyyyy!!!
