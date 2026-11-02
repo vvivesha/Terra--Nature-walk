@@ -6,16 +6,18 @@
 
 
 
-IMPORTANT!!
-HOW TO RUN THE GAME: 
-1) Copy and paste the following link into your web browswer: (This is the link that came from file>share>copy github.dev link):   https://github.com/vvivesha/Terra--Nature-walk/blob/4f83ee6aa7ec178bcd3bb159bb78cfbe3a4af0a8/main.py
+**IMPORTANT!!**
+**HOW TO RUN THE GAME:** 
+1) Follow the demo link (it is the link for this project's GitHub release), and find the download button.
 
-2) Click the button that, when hovered over by your mouse cursor, says "Copy raw file"
-OR: I assume that you could just highlight and copy all of my code to your clipboard.
 
-3) Open your own code editor/something able to run code that you can paste into (if has a terminal, then it should work, I believe.)
+2) Complete the download to your computer.
 
-4) Run the code in your own code editor!! And, most importantly, have fun!
+
+3) Open the .exe executable file! It should be called main.exe.
+
+
+4) Enjoyyyy!!!
 
 
 
