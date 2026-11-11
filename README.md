@@ -20,6 +20,9 @@
 4) Enjoyyyy!!!
 
 
+# Updates:
+- reshipped-- fixed bugs; now there shouldn't be a nameError for path_1. (11/10/26)  =) 
+
 
 
 

@@ -31,7 +31,7 @@ print("...............")
 mode = input("==> Would you like to try DIFFICULT or NORMAL mode?  ")
 print("..............")
 
-if mode not in {"normal", "NORMAL", "difficult", "DIFFICULT"}:
+if mode not in ["normal", "NORMAL", "difficult", "DIFFICULT"]:
     game_mode = "invalid"
     mode_error = "yes"
     print("<Error: player has requested an *invalid*    '" + mode + "'    mode>")
@@ -260,6 +260,9 @@ if animal_roll == "n":
         animal_3 = "moose"
 
        
+if mode in ["difficult", "DIFFICULT"]:
+    path_1 = "SECOND"
+
        #need to add if they opt out of choosing their character's name!! (done)
 for gap in range(5):
     print(" ")
@@ -279,12 +282,21 @@ input("<Press enter to continue>")
 print("►  *Your empty tea cup's lid quietly clinks against the ceramic body of the tea cup.* You march onwards, and time seems to stall.")
 time.sleep(1)
 print("In no time, the first fork in the path is ahead of you. You see two signs. The first path leads to a waterfall, and the other leads to a cliff.")
-if mode in ["difficult" or "DIFFICULT"]:
-    path_1 = "SECOND"
-if mode == "normal":
+if mode in ["normal", "NORMAL"]:
     path_1 = input("==> Should you take the SECOND path?  (respond with either: FIRST/SECOND)")
-if path_1 == "SECOND" or "second":
+
+
+if path_1 in ["SECOND", "second"]:
     confirm = input("==> Are you sure?? (y = SECOND path/n = FIRST path)  ")
+    if confirm == "n":
+        for gap in range(3):
+            print(" ")
+        print("<Sike! You can only go down the second trail, since you chose " + mode + " mode XD>")
+        time.sleep(1)
+        for gap in range(3):
+            print(" ")
+        path_1 = "SECOND"
+        confirm = "y"
     if confirm == "y":
         print("►  Second path it is. ...")
         time.sleep(0.5)
@@ -396,7 +408,7 @@ if path_1 == "SECOND" or "second":
                             print("------")
                             print("<Restart the game to discover more endings!!>")
 #badge 1 ^
-if path_1 == "FIRST" or "first":
+if path_1 in ["FIRST", "first"]:
     print("►  First path it is. ... 8 minutes pass, akin to the numerous towering oak trees. You've lost track of time again, when a " +  animal_1 + " scurries out of your path.")
     print("» " + animal_1 + ": ⇀‸↼  WATCH IT!! I was munching on this here seed, you INCONSIDERATE tower.")
     one = input("==> Converse with the creature, or return the attitude? (a/b)")
